@@ -1,0 +1,117 @@
+* {
+    font-family : "Nanum Gothic";
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:500;
+}
+ul,li,dl,dt,dd,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+*,body,a{
+	font-family:'Roboto','AppleSDGothicNeo',sans-serif !important;
+	font-size:14px;
+	font-weight:400;
+	letter-spacing: -0.025em;
+    font-style: normal;
+    line-height: 1.4;
+	color:#242424;
+}
+.gma{
+	font-family:'GmarketSans',sans-serif !important;
+	color:#302e33;
+}
+img{
+	border:0;
+	vertical-align:top;
+}
+table{
+	border-collapse: collapse;
+	width:100%;
+}
+input,input[type="submit"]{
+   appearance: none;
+   border-radius: 0;
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
+}
+input[type="radio"],
+input[type="checkbox"]{
+	appearance: auto;
+	-webkit-appearance: auto;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus{ outline: none;}
+button,
+label{ cursor:pointer}
+b{font-weight:600;}
+.inner {
+    max-width:600px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align:center;
+    width:100%;
+}
+table {
+    margin-bottom: 100px
+}
+h1 {
+    font-size: 36px;
+    font-weight:600;
+    margin:45px 0 25px
+}
+tr {
+    border-bottom: 1px solid #bbb;
+    height: 55px;
+}
+.td_date {
+    width: 150px;
+    text-align: center;
+}
+.td_num {
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+}
+th {
+    color: #373737;
+    font-weight: 600;
+    font-size: 15px;
+    border-top: 1.5px solid #373737;
+    /*background: rgba(2, 128, 144, 0.1);*/
+}
+td {
+    font-size: 15px;
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 18px;
+        margin:25px 0 15px
+    }
+    tr {
+        height: 35px;
+    }
+    th {
+        font-size: 13px;
+    }
+    td {
+        font-size:12px
+    }
+    .td_date {
+        width: 130px;
+    }
+    .td_num {
+        width: 80px;
+        font-size:12px
+    }
+}

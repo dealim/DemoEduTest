@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  webapp:
+    build: .  # 현재 디렉터리에 있는 Dockerfile을 사용
+    ports:
+      - "8089:8089"
+    environment:  # 환경 변수 설정
+      DB_URL: ${DB_URL}
+      DB_USERNAME: ${MYSQL_USER}
+      DB_PASSWORD: ${MYSQL_PASSWORD}

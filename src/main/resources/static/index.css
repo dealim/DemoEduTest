@@ -1,0 +1,556 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('./fonts/AppleSDGothicNeoL.eot?#iefix') format('embedded-opentype');
+	src: /*url('../fonts/AppleSDGothicNeoL.otf?#iefix'),*/
+			url('./fonts/AppleSDGothicNeoL.ttf') format('truetype'),
+			local(â€»), url('./fonts/AppleSDGothicNeoL.woff') format('woff');
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('./fonts/AppleSDGothicNeoR.eot?#iefix') format('embedded-opentype');
+	src: /*url('../fonts/AppleSDGothicNeoR.otf?#iefix'),*/
+			url('./fonts/AppleSDGothicNeoR.ttf') format('truetype'),
+			local(â€»), url('./fonts/AppleSDGothicNeoR.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('./fonts/AppleSDGothicNeoM.eot?#iefix');
+	src: 	/*url('../fonts/AppleSDGothicNeoM.otf?#iefix') format('embedded-opentype'),*/
+			url('./fonts/AppleSDGothicNeoM.ttf') format('truetype'),
+			local(â€»), url('./fonts/AppleSDGothicNeoM.woff') format('woff');
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('./fonts/AppleSDGothicNeoB.eot?#iefix') format('embedded-opentype');
+	src: /*url('../fonts/AppleSDGothicNeoB.otf?#iefix'),*/
+			url('./fonts/AppleSDGothicNeoB.ttf') format('truetype'),
+			local(â€»), url('./fonts/AppleSDGothicNeoB.woff') format('woff');
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src:url('./fonts/AppleSDGothicNeoEB.eot?#iefix') format('embedded-opentype');
+	src: /*url('../fonts/AppleSDGothicNeoEB.otf?#iefix'),*/
+			url('./fonts/AppleSDGothicNeoEB.ttf') format('truetype'),
+			local(â€»), url('./fonts/AppleSDGothicNeoEB.woff') format('woff');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src:url('./fonts/AppleSDGothicNeoH.eot?#iefix') format('embedded-opentype');
+	src: /*url('../fonts/AppleSDGothicNeoH.otf?#iefix'),*/
+			url('./fonts/AppleSDGothicNeoH.ttf') format('truetype'),
+			local(â€»), url('./fonts/AppleSDGothicNeoH.woff') format('woff');
+	font-weight: 800;
+}
+* {
+    box-sizing: border-box;
+    /*font-family: 'Nanum Gothic';*/
+    font-style: normal;
+    padding:0;
+    margin:0;
+    font-family:'AppleSDGothicNeo',sans-serif !important;
+    font-weight: 400;
+}
+
+html, body {
+    min-height: 100%;
+    font-family:'AppleSDGothicNeo',sans-serif !important;
+}
+body {
+    overflow:hidden
+}
+/*
+body {
+    background: #eafaf9;
+    background-image: -webkit-linear-gradient(90deg, #d6efe9, #eafaf9);
+    background-image: linear-gradient(0deg, #d7f1ea, #eafaf9);
+}
+
+.mm-survey {
+    margin: 60px auto;
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    max-width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    padding: 50px 30px 30px 30px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+    -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.mm-survey::before, .mm-survey::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+}
+.mm-survey::before {
+    left: -10%;
+    bottom: -85%;
+    background-color: rgba(69, 105, 144, 0.15);
+    -webkit-animation: wawes 6s infinite linear;
+    -moz-animation: wawes 6s infinite linear;
+    animation: wawes 15s infinite linear;
+}
+.mm-survey::after {
+    left: -15%;
+    bottom: -80%;
+    background-color: rgba(2, 128, 144, 0.2);
+    -webkit-animation: wawes 15s infinite;
+    -moz-animation: wawes 15s infinite;
+    animation: wawes 15s infinite;
+}
+
+@-webkit-keyframes wawes {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes wawes {
+    from {
+        -moz-transform: rotate(0);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes wawes {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+}
+
+.mm-survey-container h1 {
+    padding-bottom: 25px;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5; *//* 줄 간격을 글자 크기의 1.5배로 설정 *//*
+}
+
+.mm-survey-content {
+    text-align: center;
+}
+
+.mm-survey-content input[type="text"],
+.mm-survey-content input[type="number"],
+.mm-survey-content input[type="email"] {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    margin: 30px auto;
+    border: 0px solid rgba(204, 204, 204, 0.9);  *//* 테두리 투명도 설정 *//*
+    background-color: rgba(255, 255, 255, 0.9);  *//* 배경 투명도 설정 *//*
+    border-radius: 5px;
+    font-size: 13px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+
+.mm-survey-content input:focus {
+    border-color: #4CB8C4;
+    box-shadow: 0 0 5px rgba(76, 184, 196, 0.5); *//* 포커스 시 그림자 추가 *//*
+}
+
+button {
+    padding: 10px;
+    display: block;
+    width: 30%;
+    background: linear-gradient(to right, #00bcd4, #4db6ac);  *//* 청록색 그라디언트 *//*
+    color: #fff;  *//* 텍스트 색을 흰색으로 *//*
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; *//* 변환 효과 추가 *//*
+    margin: 60px auto 40px auto;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00adbe, #00a99c);  *//* 진한 청록색 그라디언트 *//*
+    transform: scale(1.05); *//* 마우스 오버 시 버튼 크기 조정 *//*
+}
+
+button:focus {
+    outline: none;
+}
+
+.rb-box {
+    width: 80%;
+    max-width: 420px;
+    margin: 50px auto;
+    padding: 1.3em;
+    background: #292942;
+    border-radius: .75em;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    box-shadow:
+            0 2px 2px rgba(243,49,128,.5),
+            0 0px 5px rgba(243,49,128,.15),
+            0 0px 4px rgba(0,0,0,.35),
+            0 5px 20px rgba(243,49,128,.25),
+            0 15px 50px rgba(243,49,128,.75),
+            inset 0 0 15px rgba(255,255,255,.05);
+}
+
+@media screen and (max-width: 600px) {
+    .mm-survey{
+        top : 50%;
+    }
+    .mm-survey-container h1{
+        font-size: 30px;
+    }
+    .mm-survey-content input[type="text"],
+    .mm-survey-content input[type="number"],
+    .mm-survey-content input[type="email"] {
+        width: 70%;
+    }
+}
+
+*//*타이틀 모바일에선 두줄이 됨*//*
+@media only screen and (max-width: 380px) {
+    .title-break-line {
+        display: inline;
+    }
+    .title-break-line::after {
+        content: '\A';
+        white-space: pre;
+    }
+}*/
+body {
+    background: #f6f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.con {
+    /*max-width: 980px;
+    width:100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin: 60px auto;*/
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.mm-survey {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    /*padding:  0 50px;*/
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(108,72,242,255);
+}
+.con>div  {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all .6s ease-in-out;
+    width:50%;
+    padding: 0 50px;
+
+}
+.mm-survey-container {
+    width:100%
+}
+.con>div.first-child {
+    transform: translateX(-100%);
+    opacity: 1;
+    z-index: 5;
+    left: 0;
+    width: 50%;
+}
+.con>div.survey_right {
+    transform: translateX(100%);
+    border-left:1px solid #ddd;
+    text-align:center
+}
+
+button , .term_submit {
+    border-radius: 20px;
+    /*border: 1px solid rgba(108,72,242,255);*/
+    /*background: #ff445c;*/
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.8);
+    background: rgba(108,72,242,255);
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 80ms ease-in;
+    margin-top:30px;
+    cursor:pointer
+}
+button:hover {
+    color:rgba(108,72,242,255);
+    background:#fff;
+    transform: scale(1.05);
+    /*background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;   진한 청록색 그라디언트 *//*
+    transform: scale(1.05); /* 마우스 오버 시 버튼 크기 조정 */
+}
+.term_submit:hover {
+     color:rgba(108,72,242,255);
+     background:#fff;
+     transform: scale(1.05);
+     border: 1px solid rgba(108,72,242,255);
+}
+
+button:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    position: relative;
+    top: 25px;
+}
+
+.mm-survey-container h1 {
+    /*padding-bottom: 25px;*/
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight:500;
+    line-height: 1.5; /* 줄 간격을 글자 크기의 1.5배로 설정 */
+}
+p {
+    padding: 5px 0 30px;
+    color:#fff;
+    opacity:0.8;
+    font-size:14px
+
+}
+/*.mm-survey-content input[type="text"],
+.mm-survey-content input[type="number"],
+.mm-survey-content input[type="email"] {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    margin: 30px auto;
+    border: 0px solid rgba(204, 204, 204, 0.9);  *//* 테두리 투명도 설정 *//*
+    background-color: rgba(255, 255, 255, 0.9);  *//* 배경 투명도 설정 *//*
+    border-radius: 5px;
+    font-size: 13px;
+    transition: border 0.3s, box-shadow 0.3s;
+}*/
+.mm-survey-content input {
+    background: #fff;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius:3px;
+    /*-webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);*/
+}
+
+.mm-survey-content input:focus {
+    border-color: #4CB8C4;
+    box-shadow: 0 0 5px rgba(76, 184, 196, 0.5); /* 포커스 시 그림자 추가 */
+}
+
+/*button {
+    padding: 10px;
+    display: block;
+    width: 30%;
+    background: linear-gradient(to right, #00bcd4, #4db6ac);  *//* 청록색 그라디언트 *//*
+    color: #fff;  *//* 텍스트 색을 흰색으로 *//*
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; *//* 변환 효과 추가 *//*
+    margin: 60px auto 40px auto;
+}*/
+
+h2 {
+    font-size: 30px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 1.5; /* 줄 간격을 글자 크기의 1.5배로 설정 */
+        margin-top:30px;
+}
+.content {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 150px;
+    overflow-y: auto;
+    white-space: pre-line;
+    padding: 10px;
+    font-size:13px;
+    height: 260px;
+    text-align:left;
+    word-break: keep-all;
+}
+.content  {
+  overflow-y: scroll; /*  */
+}
+
+/* 스크롤바의 폭 너비 */
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #ccc; /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+.content::-webkit-scrollbar-track {
+    background: #fff;  /*스크롤바 뒷 배경 색상*/
+   }
+.privateterm {
+    margin-top:10px;
+    font-size:14px;
+
+}
+.privateterm input {
+    display: none;
+    appearance: auto;
+    -webkit-appearance: auto;
+
+}
+.privateterm input + label {
+    cursor:pointer
+}
+.privateterm input:checked + label span {
+    border: 1px solid rgba(108,72,242,255);
+    background:rgba(108,72,242,255);
+    color:#fff
+}
+.privateterm input + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align:center;
+    padding:0px;
+    margin-right:5px
+}
+.privateterm {
+    display:flex;
+    justify-content: space-between;
+}
+.privateterm02 {
+    color:#ccc;
+    cursor:pointer
+}
+.survey_right_form {
+    text-align:center
+}
+.modal_con.on {
+    display: block;
+}
+.modal_con {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 13;
+    max-width: 500px;
+    width: 100%;
+    /* height: 100%; */
+    padding: 10px;
+    z-index: 100;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+}
+.modal_bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 12;
+}
+h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.scroll {
+    height: 300px;
+    overflow-y: auto;
+    white-space: pre-line;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size:14px;
+    text-align:left;
+    word-break: keep-all;
+}
+.title {
+    position:relative
+}
+.modal_btn {
+    position:absolute;
+    top:10px;
+    right:10px
+}
+.modal_bg.on {
+    display:block
+}
+.modal_btn i {
+    color:#333;
+    font-size:18px
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWSxSeoul 레벨 테스트</title>
+    <link rel="stylesheet" href="index.css?v=1.02">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js?v=1.03"></script>
+</head>
+<body>
+
+<!--<div class="mm-survey">
+    <div class="mm-survey-container">
+        <h1>DEMO<br> 레벨 테스트</h1>
+        <form id="respondent-form" class="mm-survey-page active">
+            <div class="mm-survey-content">
+                <input type="text" id="name" placeholder="이름" required>
+                <input type="text" id="sesacId" placeholder="새싹 아이디" required>
+                <input type="text" id="email" placeholder="이메일" required>
+            </div>
+            <button type="submit">시작하기</button>
+        </form>
+    </div>
+</div>-->
+<div class="con">
+    <div class="mm-survey">
+        <div class="mm-survey-container">
+            <h1>AWSxSeoul DEMO<br> 레벨 테스트</h1>
+            <p>AWSxSeoul 교육 참여 목적의 입과 테스트</p>
+            <form id="respondent-form" class="mm-survey-page active">
+                <div class="mm-survey-content">
+                    <input type="text" id="name" placeholder="이름" required>
+                    <input type="text" id="sesacId" placeholder="새싹 아이디" required>
+                    <input type="text" id="email" placeholder="이메일" required>
+                </div>
+                <button type="submit">시작하기</button>
+            </form>
+        </div>
+    </div>
+    <div class="survey_right">
+        <div class="survey_right_form">
+            <h2>주의사항</h2>
+            <div class="content">※ 시험시간은 20분에 20문항으로 시간이 초과되면 강제 종료되오니 시간 엄수 바랍니다.
+
+                ※ 입실 마감 시간은 오전 9시입니다.
+
+                ※ 시험장 반입 물품(스마트폰, 전자시계 등)은 반입이 안되오니 소지하신 경우 제출하시길 바랍니다.
+
+                ※ 시험 페이지를 종료하여도 같은 아이디를 입력하면 계속해서 시험을 볼 수 있습니다
+
+                ※ 시험 응시는 한 번만 가능합니다(재응시 불가능)
+
+                ※ 모든 문제는 한 문제씩 보이며 '다음' 버튼을 눌러 다음 문제를 풀 수 있습니다
+
+                ※ 정확한 정보를 입력하고 시험을 시작해주세요. 제출 하지 않을 시 불이익이 발생 할 수 있습니다.
+            </div>
+            <div class="privateterm">
+                <div class="privateterm01">
+                    <input type="checkbox" id="privateterm" class="" name="privateterm" value="">
+                    <label for="privateterm"><span><i class="xi-check-min"></i></span> 개인정보 수집 및 이용약관 <b>필수</b> </label>
+                </div>
+                <div class="privateterm02">보기</div>
+
+            </div>
+            <a href="javascript:void(0)" class="term_submit">확인</a>
+        </div>
+    </div>
+</div>
+<div class="modal modal_con term">
+    <div clas="title">
+        <h3>개인정보 처리 방침</h3>
+        <a href="javascript:void(0);" class="modal_btn" ><i class="xi-close"></i></a>
+    </div>
+    <div class="scroll">개인 정보 수집동의 표시
+        개인정보취급방침은 다음과 같은 내용을 담고 있습니다.
+
+        가. 수집하는 개인정보 항목 및 수집방법
+
+        이름, 나이, 전화번호, 그 외 교육에 필요한 개인정보
+        나. 개인정보의 수집 및 이용목적
+
+        수집한 개인정보를 다음의 목적을 위해 활용합니다.
+
+        교육생 모집 대행업무
+        다. 수집한 개인정보의 보유 및 이용기간
+
+        원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+
+        개인정보 제 3자 제공동의 표시
+        1. 회사는 이용자의 개인정보를 제1조(수집하는 개인정보의 항목 및 수집목적)에서 명시한 범위 내에서만 처리하며, 이용자의 동의, 법률의 특별한 규정 등 개인정보보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.
+
+        2. 회사는 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.
+
+        ① 개인정보를 제공받는 제3자 : 서울시, 서울경제진흥원, 한국클라우드컴퓨팅연구조합
+        ② 개인정보를 제공받는 자의 개인정보 이용 목적 : 교육과정 교육생관리 및 그 외 전반의 총괄 운영
+        ③ 제공하는 개인정보의 항목 : 이름, 나이, 전화번호, 그 외 교육에 필요한 개인정보
+        ④ 개인정보를 제공받는 자의 개인정보 보유 및 이용 기간 : 참여일로부터 12개월
+
+        3. 이용자는 서비스 제공 및 이용 이외의 목적으로 제3자에게 본인의 개인정보를 제공하는 것에 동의하지 않을 수 있습니다.
+
+        4. 회사는 개인정보 제공업체에 변경이 생길 수 있습니다. 이에 대한 변경사항은 회사 인터넷 사이트를 통해 제공받는 자, 이용목적, 제공하는 개인정보항목, 보유 및 이용기간에 대해 공지하고 별도의 고객동의를 득하여 업체에게 제공됩니다.
+
+        5. 이용자는 이미 동의한 개인정보 제3자 제공에 대한 철회를 요청할 수 있으며, 요청하는 창구는 다음과 같습니다.
+
+        그로스소프트
+        이메일 : hanna@growthsoft.kr
+        전화 : 010. 9680. 1928</div>
+
+</div>
+<div class="modal_bg"></div>
+
+</body>
+</html>
